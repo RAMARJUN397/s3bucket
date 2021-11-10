@@ -9,12 +9,12 @@ provider "aws" {
 }
 
 #Aws s3bucket
-resource "aws_s3_bucket" "clear" {
-  bucket = "my-tf-test-bucket"
+resource "aws_s3_bucket" "terraformsimplestorage3bucket" {
+  bucket = "terraformsimplestorage3bucket"
   acl    = "private"
 
   tags = {
-    Name        = "My bucket-01234"
+    Name        = "terraformsimplestorage3bucket"
     Environment = "OPS"
   }
 }
