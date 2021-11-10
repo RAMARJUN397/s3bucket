@@ -9,12 +9,12 @@ provider "aws" {
 }
 
 #Aws s3bucket
-resource "aws_s3_bucket" "b" {
+resource "aws_s3_bucket" "clear" {
   bucket = "my-tf-test-bucket"
   acl    = "private"
 
   tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+    Name        = "My bucket-01234"
+    Environment = "OPS"
   }
 }
