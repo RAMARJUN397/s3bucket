@@ -9,12 +9,12 @@ provider "aws" {
 }
 
 #Aws s3bucket
-resource "aws_s3_bucket" "terraformsimplestorage3bucket" {
-  bucket = "terraformsimplestorage3bucket"
+resource "aws_s3_bucket" "devopss3" {
+  #bucket = "demodevops"
   acl    = "private"
 
   tags = {
-    Name        = "terraformsimplestorage3bucket"
+    Name        = "devopsdemo"
     Environment = "OPS"
   }
 }
